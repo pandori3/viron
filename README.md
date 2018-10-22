@@ -1,5 +1,18 @@
-![VIRON](./art/banner.png)
+This branch is adjusted based on demo so that API server can run even without Docker for Mac.
+The procedure is as follows.
 
+1. Install mysql and create the database (viron_local).
+2. Create a user for connection and grant privileges.
+3. Edit // env and set connection information of DB and operating host.
+4. Install the module with install at npm install.
+5. Start the application with start at npm.
+
+If you can access it via https: // {hostname}: 3000 / swagger.json, you can access it from viron's connection setting screen.
+
+
+For simple startup and testing, it also worked on EC2 (t2.nano) on AWS.
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 <h2 align="center">Automated Design-based Management Console</h2>
 
 All you do is just create a API server and a OAS2.0 json file. Then viron admin tool is ready to use.
