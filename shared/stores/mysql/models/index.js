@@ -1,0 +1,12 @@
+module.exports = {
+  IdMasters: require('./id_masters'),
+  Divisions: require('./divisions'),
+  Users: require('./users'),
+  UserBlogs: require('./user_blogs'),
+  UserBlogEntries: require('./user_blog_entries'),
+  UserFavorites: require('./user_favorites'),
+  BlogDesigns: require('./blog_design'),
+  Topics: require('./topics'),
+
+  associations: require('./associations'),
+};

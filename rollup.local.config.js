@@ -5,8 +5,8 @@ import baseConfig from './rollup.base.config.js';
 const config = ObjectAssign({
   watch: {
     chokidar: true,
-    include: 'src/**',
-    exclude: 'src/css/**'
+    include: './forbuild/src/**',
+    exclude: './forbuild/src/css/**'
   }
 }, baseConfig);
 

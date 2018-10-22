@@ -7,7 +7,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import progress from 'rollup-plugin-progress';
 import replace from 'rollup-plugin-re';
 import riot from 'rollup-plugin-riot';
-const vironConfig = require('./viron');
+const vironConfig = require('./controllers/viron');
 
 const namedExports = {};
 mout.object.forOwn(mout, (v, k) => {
@@ -27,7 +27,7 @@ mout.object.forOwn(mout, (v, k) => {
 
 // @see https://github.com/rollup/rollup/wiki/JavaScript-API
 export default {
-  input: 'src/app.js',
+  input: './forbuild/src/app.js',
   output: {
     file: 'dist/js/app.js',
     sourcemap: false,
@@ -70,7 +70,7 @@ export default {
       browser: true
     }),
     commonjs({
-      include: ['viron.js', 'node_modules/**'],
+      include: ['./forbuild/src/viron/viron.js', 'node_modules/**'],
       namedExports: namedExports
     }),
     buble({
