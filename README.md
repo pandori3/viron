@@ -3,7 +3,7 @@ The procedure is as follows.
 
 1. Install mysql and create the database (viron_local).
 2. Create a user for connection and grant privileges.
-3. Edit // env and set connection information of DB and operating host.
+3. Edit env and set connection information of DB and operating host.
 4. Install the module with install at npm install.
 5. Start the application with start at npm.
 
